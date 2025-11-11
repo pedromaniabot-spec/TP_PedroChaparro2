@@ -1,4 +1,4 @@
-alert("¡Bienvenido a la prueba JavaScript!");
+alert("¡Bienvenido Usuario!");
 
 // Pedimos nombre y apellido
 let nombreCompleto = prompt("Por favor, ingrese su nombre y apellido:");
