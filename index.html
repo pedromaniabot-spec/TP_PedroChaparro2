@@ -3,12 +3,32 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Ejemplo de JavaScript</title>
- <script src="scripts.js" defer ></script>
-
+ <title>Página 1 - Principal</title>
+ <link rel="stylesheet" href="styles.css">
+ <script src="scripts.js" defer></script>
 </head>
 <body>
-<h1></h1>
+
+<header>
+    <h1 id="titulo"></h1>
+</header>
+
+<main>
+    <section>
+        <p>Bienvenido/a a nuestra web. Desde aquí podrás acceder a las demás páginas, donde encontrarás diferentes contenidos y funciones interactivas.</p>
+
+        <p id="mostrarNombre" style="font-size:1.2rem; font-weight:bold;"></p>
+
+        <nav>
+            <a href="pagina2.html" class="boton">Ir a Página 2</a>
+            <a href="pagina3.html" class="boton">Ir a Página 3</a>
+        </nav>
+    </section>
+</main>
+
+<footer>
+    <p>Derechos Reservados - Alumno: [Pedro Chaparro]</p>
+</footer>
 
 </body>
 </html>
