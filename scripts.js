@@ -1,3 +1,11 @@
-alert("Bienvenido a la prueba JavaScript");
+alert("¡Bienvenido a la prueba JavaScript!");
 
-document.querySelector("h1").textContent = "¡ESTO INDICA QUE FUNCIONA JAVASCRIPT!";
+// Pedimos nombre y apellido
+let nombreCompleto = prompt("Por favor, ingrese su nombre y apellido:");
+
+// Mostramos bienvenida con nombre ingresado
+alert(`¡Bienvenido/a, ${nombreCompleto}!`);
+
+// Mostramos en el título y en la página
+document.querySelector("#titulo").textContent = "Página Principal";
+document.querySelector("#mostrarNombre").textContent = `Usuario: ${nombreCompleto}`;
