@@ -4,7 +4,7 @@ alert("¡Bienvenido a la prueba JavaScript!");
 let nombreCompleto = prompt("Por favor, ingrese su nombre y apellido:");
 
 // Mostramos bienvenida con nombre ingresado
-alert(`¡Bienvenido/a, ${nombreCompleto}!`);
+alert(`¡Bienvenido/a, ${PedroChaparro}!`);
 
 // Mostramos en el título principal
 document.querySelector("#titulo").textContent = "¡Bienvenido/a a la Página Principal!";
