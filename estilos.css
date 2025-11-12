@@ -114,4 +114,20 @@ footer {
 @keyframes escalar { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
 @keyframes mover { 0% { transform: translateX(0); } 50% { transform: translateX(20px); } 100% { transform: translateX(0); } }
 
+.tabla button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.tabla button:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
 
