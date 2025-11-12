@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 3 - Tabla</title>
+    <title>Página 3 - Operaciones</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="scripts3.js" defer></script>
 </head>
@@ -15,36 +15,31 @@
 
 <main>
     <section>
-        <p>Esta página contiene una tabla con información de ejemplo. Observa la animación de los encabezados.</p>
+        <p>Esta página contiene operaciones interactivas. Presiona "CALCULAR" para ingresar valores y obtener el resultado.</p>
 
         <table class="tabla">
             <thead>
                 <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
+                    <th>OPERACIÓN</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>BOTONES</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Mouse</td>
-                    <td>$20</td>
-                    <td>10</td>
+                    <td>Suma</td>
+                    <td>Suma los 2 números ingresados</td>
+                    <td><button onclick="calcular('suma')">CALCULAR</button></td>
                 </tr>
                 <tr>
-                    <td>Teclado</td>
-                    <td>$35</td>
-                    <td>5</td>
+                    <td>División</td>
+                    <td>Divide el 1er número con el 2do ingresado</td>
+                    <td><button onclick="calcular('division')">CALCULAR</button></td>
                 </tr>
                 <tr>
-                    <td>Monitor</td>
-                    <td>$150</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Parlantes</td>
-                    <td>$50</td>
-                    <td>8</td>
+                    <td>Promedio</td>
+                    <td>Promediar los 2 números ingresados</td>
+                    <td><button onclick="calcular('promedio')">CALCULAR</button></td>
                 </tr>
             </tbody>
         </table>
@@ -62,4 +57,5 @@
 
 </body>
 </html>
+
 
