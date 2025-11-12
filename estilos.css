@@ -31,7 +31,6 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
-
 main {
     padding: 20px;
 }
@@ -50,14 +49,12 @@ section:hover, article:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-
 footer {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
-
 
 @keyframes aparecer {
     0% {
@@ -87,6 +84,7 @@ footer {
     transform: scale(1.1);
 }
 
+/* Galería de imágenes con animaciones */
 .galeria {
     display: flex;
     justify-content: space-around;
@@ -103,49 +101,17 @@ footer {
 }
 
 /* Animaciones diferentes para cada imagen */
-.img1 {
-    animation: girar 3s linear infinite;
-}
-
-.img2 {
-    animation: saltar 2s ease-in-out infinite;
-}
-
-.img3 {
-    animation: girarY 4s linear infinite;
-}
-
-.img4 {
-    animation: escalar 3s ease-in-out infinite;
-}
-
-.img5 {
-    animation: mover 4s ease-in-out infinite;
-}
+.img1 { animation: girar 3s linear infinite; }
+.img2 { animation: saltar 2s ease-in-out infinite; }
+.img3 { animation: girarY 4s linear infinite; }
+.img4 { animation: escalar 3s ease-in-out infinite; }
+.img5 { animation: mover 4s ease-in-out infinite; }
 
 /* Definición de animaciones */
-@keyframes girar {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+@keyframes girar { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes saltar { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+@keyframes girarY { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(360deg); } }
+@keyframes escalar { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+@keyframes mover { 0% { transform: translateX(0); } 50% { transform: translateX(20px); } 100% { transform: translateX(0); } }
 
-@keyframes saltar {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
 
-@keyframes girarY {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-@keyframes escalar {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-}
-
-@keyframes mover {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(20px); }
-    100% { transform: translateX(0); }
-}
